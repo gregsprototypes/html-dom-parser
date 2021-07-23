@@ -10,7 +10,6 @@
     "lint": "eslint . --ignore-path .gitignore",
     "lint:dts": "dtslint .",
     "lint:fix": "npm run lint -- --fix",
-    "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable && run-s lint lint:dts test clean build",
     "release": "standard-version --no-verify",
